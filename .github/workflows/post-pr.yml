@@ -1,0 +1,15 @@
+name: post-pr
+
+on:
+  workflow_run:
+    workflows: 
+      - pr-workflow
+    types:
+      - completed
+    
+jobs:
+  random:
+    runs-on: ubuntu-latest
+    steps:
+      - name: random
+        run: echo "random"
