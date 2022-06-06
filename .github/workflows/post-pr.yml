@@ -3,7 +3,7 @@ name: post-pr
 on:
   workflow_run:
     workflows: 
-      - pr-workflow
+      - pr
     types:
       - completed
     
